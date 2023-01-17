@@ -21,7 +21,8 @@ from functools import partial
 from ..utils.admin_check import is_admin
 from .. import upload_db, var_db, tor_db, user_db, uptime
 import asyncio as aio
-import re,logging,time,os,psutil,shutil,net_io_counters
+import re,logging,time,os,psutil,shutil
+from psutil import net_io_counters
 from tortoolkit import __version__
 from ..downloaders.ytdl_downloader import handle_ytdl_command,handle_ytdl_callbacks,handle_ytdl_playlist
 torlog = logging.getLogger(__name__)
