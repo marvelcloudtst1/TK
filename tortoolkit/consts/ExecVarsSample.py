@@ -7,7 +7,7 @@ except:
         
         API_HASH = "d28109d5fd13dd9c9e87c90e8c4ff7c5"
         API_ID = 5401122
-        BOT_TOKEN = ""
+        BOT_TOKEN = "5450160033:AAEaVzts5_aW9yFVUnZvR9BvPBoxUVD5GWE"
         BASE_URL_OF_BOT = "marvelcloud.tech"
 
         # Edit the server port if you want to keep it default though.
