@@ -35,14 +35,12 @@ def add_handlers(bot: TelegramClient):
     
     bot.add_event_handler(
         handle_leech_command,
-        events.NewMessage(pattern=command_process(get_command("LEECH")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("LEECH")))
     )
     
     bot.add_event_handler(
         handle_purge_command,
-        events.NewMessage(pattern=command_process(get_command("PURGE")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("PURGE")))
     )
     
     bot.add_event_handler(
@@ -59,20 +57,17 @@ def add_handlers(bot: TelegramClient):
 
     bot.add_event_handler(
         handle_status_command,
-        events.NewMessage(pattern=command_process(get_command("STATUS")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("STATUS")))
     )
 
     bot.add_event_handler(
         handle_u_status_command,
-        events.NewMessage(pattern=command_process(get_command("USTATUS")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("USTATUS")))
     )
 
     bot.add_event_handler(
         handle_settings_command,
-        events.NewMessage(pattern=command_process(get_command("SETTINGS")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("SETTINGS")))
     )
 
     bot.add_event_handler(
@@ -83,26 +78,22 @@ def add_handlers(bot: TelegramClient):
     
     bot.add_event_handler(
         upload_document_f,
-        events.NewMessage(pattern=command_process(get_command("UPLOAD")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("UPLOAD")))
     )
 
     bot.add_event_handler(
         handle_ytdl_command,
-        events.NewMessage(pattern=command_process(get_command("YTDL")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("YTDL")))
     )
 
     bot.add_event_handler(
         handle_ytdl_playlist,
-        events.NewMessage(pattern=command_process(get_command("PYTDL")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("PYTDL")))
     )
     
     bot.add_event_handler(
         about_me,
-        events.NewMessage(pattern=command_process(get_command("ABOUT")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("ABOUT")))
     )
 
     bot.add_event_handler(
@@ -119,14 +110,12 @@ def add_handlers(bot: TelegramClient):
 
     bot.add_event_handler(
         handle_server_command,
-        events.NewMessage(pattern=command_process(get_command("SERVER")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("SERVER")))
     )
     
     bot.add_event_handler(
         set_password_zip,
-        events.NewMessage(pattern=command_process("/setpass"),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process("/setpass"))
     )
 
     bot.add_event_handler(
@@ -136,8 +125,7 @@ def add_handlers(bot: TelegramClient):
 
     bot.add_event_handler(
         _insta_post_downloader,
-        events.NewMessage(pattern=command_process(get_command("INSTADL")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("INSTADL")))
     )
 
     bot.add_event_handler(
@@ -147,20 +135,17 @@ def add_handlers(bot: TelegramClient):
 
     bot.add_event_handler(
         clear_thumb_cmd,
-        events.NewMessage(pattern=command_process(get_command("CLRTHUMB")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("CLRTHUMB")))
     )
 
     bot.add_event_handler(
         set_thumb_cmd,
-        events.NewMessage(pattern=command_process(get_command("SETTHUMB")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("SETTHUMB")))
     )
     
     bot.add_event_handler(
         speed_handler,
-        events.NewMessage(pattern=command_process(get_command("SPEEDTEST")),
-        chats=get_val("ALD_USR"))
+        events.NewMessage(pattern=command_process(get_command("SPEEDTEST")))
     )
 
 
