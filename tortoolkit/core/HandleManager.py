@@ -21,7 +21,7 @@ from functools import partial
 from ..utils.admin_check import is_admin
 from .. import upload_db, var_db, tor_db, user_db, uptime
 import asyncio as aio
-import re,logging,time,os,psutil,shutil
+import re,logging,time,os,psutil,shutil,net_io_counters
 from tortoolkit import __version__
 from ..downloaders.ytdl_downloader import handle_ytdl_command,handle_ytdl_callbacks,handle_ytdl_playlist
 torlog = logging.getLogger(__name__)
@@ -528,7 +528,7 @@ async def handle_server_command(message):
 
 
     try:
-        upb, dlb = 0,0
+        upb, dlb = net_io_counters().bytes_sent,net_io_counters().bytes_recv
         dlb = human_format.human_readable_bytes(dlb)
         upb = human_format.human_readable_bytes(upb)
     except:
